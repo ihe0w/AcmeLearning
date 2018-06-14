@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar=getSupportActionBar();
         if(actionBar!=null)
             actionBar.hide();
-
+      String mau="juihy";
 
 
 
