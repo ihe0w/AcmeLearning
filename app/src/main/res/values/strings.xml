@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AcmeLearning</string>
+    <string name="english_text">英语</string>
+    <string name="computer_text">计算机</string>
+    <string name="physics_text">物理</string>
+    <string name="chemical_text">化学</string>
+    <string name="medical_text">医学</string>
+    <string name="calculus_text">高等数学</string>
+
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ihe.acmelearning.MainActivity">
+
+    <ImageView
+        android:id="@+id/bgimage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/in_everything_thanks"
+        android:contentDescription="TODO" />
+
+   <!--<RelativeLayout-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="match_parent"-->
+       <!--android:layout_below="@id/bgimage"-->
+       <!--&gt;-->
+    <GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:layout_below="@id/bgimage"
+        android:rowCount="2">
+       <!--<RelativeLayout-->
+           <!--android:id="@+id/math_layout"-->
+           <!--&gt;-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:id="@+id/math"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/math" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/math"
+                android:layout_below="@id/math"
+                android:fontFamily="serif"
+                android:text="@string/calculus_text"
+                android:textSize="15sp"
+                android:visibility="visible"
+
+                android:layout_alignStart="@id/math" />
+
+            <ImageButton
+                android:id="@+id/english"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:scaleType="fitXY"
+
+                android:src="@drawable/english"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/english"
+                android:layout_below="@id/english"
+                android:layout_marginTop="0dp"
+                android:fontFamily="serif"
+
+
+                android:text="@string/english_text"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/computer"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/computer"
+
+
+                />
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/computer"
+                android:layout_below="@id/computer"
+                android:layout_marginTop="-14dp"
+                android:fontFamily="serif"
+
+                android:text="@string/computer_text"
+
+
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:id="@+id/physics"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/physics" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/physics"
+                android:layout_below="@id/physics"
+                android:fontFamily="serif"
+                android:text="@string/physics_text"
+                android:textSize="15sp"
+
+                />
+
+            <ImageButton
+                android:id="@+id/chemical"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:scaleType="fitXY"
+
+                android:src="@drawable/chemical"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/chemical"
+                android:layout_below="@id/chemical"
+                android:fontFamily="serif"
+                android:text="@string/chemical_text"
+                android:textSize="15sp"
+
+
+                />
+
+            <ImageButton
+                android:id="@+id/medicine"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/medicine"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/medicine"
+                android:layout_below="@id/medicine"
+                android:fontFamily="serif"
+
+                android:text="@string/medical_text"
+                android:textSize="15sp"
+
+
+                />
+        </RelativeLayout>
+
+    </GridLayout>
+   <!--</RelativeLayout>-->
+
+</RelativeLayout>
